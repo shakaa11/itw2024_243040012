@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia;
+    background-color: aqua;
+}
+h1 {
+    color: darkblue;
+    font-family: comic sans ms;
+    font-size: 60px;
+    
+}
+h4 {
+    text-align: right;
+    font-style: italic;
+}
+.p1 {
+    color: orange;
+
+}
+.a1 {
+    color: aliceblue;
+}
+.a1:hover {
+    color: red;
+    text-decoration: none;
+}
+.a2:hover {
+    color: aliceblue;
+    background-color: blue;
+}
