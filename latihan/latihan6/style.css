@@ -1,0 +1,131 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    height: 50px;
+    align-items: center;
+    color: aqua;
+}
+
+div.logo {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 25%;
+}
+
+nav ul li a {
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: aqua;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* hamburger menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: aqua;
+    border-radius: 3px;
+    transition: all 0.6s;
+  }
+
+  /* hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+  
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0px);
+  }
+  
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+  }
+
+  /* responsive */
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+      width: 50%;
+    }
+  }
+  
+  /* mobile */
+  @media screen and (max-width: 576px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    nav ul {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40%;
+      font-size: large;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100vh;
+      z-index: -1;
+      background: blue;
+      transform: translateX(100%);
+      transition: all 1.3s;
+      opacity: 0;
+    }
+  
+    nav ul.slide {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
