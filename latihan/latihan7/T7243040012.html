@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADIDAS MERCH</title>
+    <link rel="stylesheet" href="T7243040012.css">
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- boxicon link -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header" id="home">
+        <div class="hero"></div>
+        <div class="features feature-1">
+          <h4 class="price">IDR 259.000</h4>
+        </div>
+        <div class="features feature-2">
+          <h4 class="price">IDR 2.200.000</h4>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+          <h1 class="logo-text"><img class="logo2" src="img/logo.jpg" alt="">Adidas</h1>
+        </div>
+        <ul class="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="about" id="about">
+        <div class="main">
+          <img src="img/adidas.jpg" />
+          <div class="about-text">
+            <h2>About <span class="warna">us</span></h2>
+            <p>
+              Adidas.adalah sebuah perusahaan sepatu Jerman. Perusahaan ini dinamakan atas pendirinya, Adolf (Adi) Dassler, yang mulai memproduksi sepatu pada 1920-an di Herzogenaurach dekat Nuremberg. Rancangan baju dan sepatu perusahaan ini biasanya termasuk tiga strip paralel dengan warna yang sama, dan motif yang sama digunakan sebagai logo resmi adidas. Adidas adalah perusahaan pakaian olahraga terbesar di Eropa dan kedua terbesar di dunia setelah Nike.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="product" id="product">
+        <h2>Product</h2>
+        <img src="img/samba3.jpg" />
+        <img src="img/samba2.jpg" />
+        <img src="img/samba4.jpg" />
+        <img src="img/bag.jpg" />
+        <img src="img/bag2.jpg" />
+        <img src="img/baju.jpg" />
+        <img src="img/baju2.jpg" />
+        <img src="img/jaket.jpg" />
+        <img src="img/baju3.jpg" />
+        <img src="img/baju4.jpg" />
+      </section>
+      <section class="contact">
+        <div class="contact-text">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-icon">
+          <a href="https://www.instagram.com/farid80s_/"
+            ><i class="bx bxl-instagram"></i>farid80s_</a
+          >
+          <a href=" https://github.com/shakaa11"
+            ><i class="bx bxl-github"></i>shakaa11</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
